@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import java.util.Random;
 import com.daimajia.androidanimations.library.YoYo;
 import com.daimajia.androidanimations.library.Techniques;
-
+import android.util.Log;
 public class MainActivity extends AppCompatActivity {
 
     String fortuneList[] = {"Don’t count on it","Ask again later","You may rely on it","Without a doubt","Outlook not so good","It's decidedly so","Signs point to yes","Yes definitely","Yes","My sources say NO"};
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                         .playOn(mFortuneBallImage);
             }
         });
+        Log.v("FORTUNE APP TAG","onCreateCalled");
     }
 
     @Override
